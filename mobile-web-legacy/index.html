@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0c1a17" />
+  <title>Verify · Face Check</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <p class="brand">SecureCheck</p>
+      <p class="step-label" id="stepLabel">Step 1 of 2 · Photo</p>
+    </header>
+
+    <div class="stage">
+      <video id="preview" playsinline muted autoplay></video>
+      <canvas id="snap" class="hidden"></canvas>
+      <img id="photoFlash" class="hidden photo-flash" alt="" />
+      <div id="overlay" class="overlay">
+        <div class="oval" aria-hidden="true"></div>
+        <p class="guide" id="guide">Center your face, then take a photo</p>
+        <p class="countdown" id="countdown"></p>
+      </div>
+    </div>
+
+    <section class="panel">
+      <p class="status" id="status">Starting camera…</p>
+      <div class="progress-bar hidden" id="progressBar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <button type="button" id="btnPrimary" class="cta" disabled>Start Test</button>
+      <button type="button" id="btnRetry" class="ghost hidden">Try again</button>
+
+      <div class="result hidden" id="resultCard">
+        <p class="result-title" id="resultTitle">—</p>
+        <p class="result-detail" id="resultDetail"></p>
+      </div>
+
+      <details class="settings">
+        <summary>Settings</summary>
+        <label for="accountId">Account ID</label>
+        <input id="accountId" type="text" value="MOBILE_USER" autocomplete="username" />
+        <label for="apiUrl">API URL</label>
+        <input id="apiUrl" type="url" placeholder="http://your-server:8001" />
+      </details>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

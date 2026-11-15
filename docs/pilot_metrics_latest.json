@@ -1,0 +1,112 @@
+{
+  "n_real": 5,
+  "n_spoof": 3,
+  "false_rejects": 0,
+  "false_accepts": 0,
+  "FRR": 0.0,
+  "FAR": 0.0,
+  "thresholds": {
+    "spatial": 0.5,
+    "temporal": 0.45,
+    "require_spatial": true,
+    "require_temporal": true
+  },
+  "sessions": [
+    {
+      "id": 4,
+      "label": "spoof",
+      "approve_liveness": false,
+      "spatial_spoof": 0.26932599884457886,
+      "spatial_ok": true,
+      "temporal": 0.0004349052906036377,
+      "temporal_ok": false,
+      "screen": 0.6709090130883948,
+      "screen_ok": false,
+      "n_frames": 300
+    },
+    {
+      "id": 5,
+      "label": "real",
+      "approve_liveness": true,
+      "spatial_spoof": 3.2053253971753295e-05,
+      "spatial_ok": true,
+      "temporal": 0.9553880337625742,
+      "temporal_ok": true,
+      "screen": 0.4,
+      "screen_ok": true,
+      "n_frames": 300
+    },
+    {
+      "id": 7,
+      "label": "real",
+      "approve_liveness": true,
+      "spatial_spoof": 0.005138319655816304,
+      "spatial_ok": true,
+      "temporal": 0.8919507004320621,
+      "temporal_ok": true,
+      "screen": 0.36,
+      "screen_ok": true,
+      "n_frames": 291
+    },
+    {
+      "id": 24,
+      "label": "spoof",
+      "approve_liveness": false,
+      "spatial_spoof": 0.0027327352203428746,
+      "spatial_ok": true,
+      "temporal": 0.8758668825030327,
+      "temporal_ok": true,
+      "screen": 0.5276638619424827,
+      "screen_ok": false,
+      "n_frames": 32
+    },
+    {
+      "id": 25,
+      "label": "real",
+      "approve_liveness": true,
+      "spatial_spoof": 0.00036918683363182934,
+      "spatial_ok": true,
+      "temporal": 0.9243751019239426,
+      "temporal_ok": true,
+      "screen": 0.4,
+      "screen_ok": true,
+      "n_frames": 32
+    },
+    {
+      "id": 26,
+      "label": "real",
+      "approve_liveness": true,
+      "spatial_spoof": 0.00022164744914334732,
+      "spatial_ok": true,
+      "temporal": 0.9071876332163811,
+      "temporal_ok": true,
+      "screen": 0.36,
+      "screen_ok": true,
+      "n_frames": 32
+    },
+    {
+      "id": 27,
+      "label": "real",
+      "approve_liveness": true,
+      "spatial_spoof": 0.0036468256032094358,
+      "spatial_ok": true,
+      "temporal": 0.889025904238224,
+      "temporal_ok": true,
+      "screen": 0.36,
+      "screen_ok": true,
+      "n_frames": 32
+    },
+    {
+      "id": 28,
+      "label": "spoof",
+      "approve_liveness": false,
+      "spatial_spoof": 0.1093073988580727,
+      "spatial_ok": true,
+      "temporal": 0.5298398435115814,
+      "temporal_ok": true,
+      "screen": 0.62,
+      "screen_ok": false,
+      "n_frames": 32
+    }
+  ]
+}

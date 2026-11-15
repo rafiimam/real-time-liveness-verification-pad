@@ -1,0 +1,24 @@
+# Local secrets / env
+local-api/.env
+
+# Model checkpoints (large)
+gpu-server/weights/*.pth
+*.pth
+
+# Generated media / smoke artifacts
+scripts/smoke_test.mp4
+scripts/sample_*.mp4
+scripts/sample_face.jpg
+data/
+__pycache__/
+.venv/
+*.pyc
+
+.env
+*.env
+# Env files (never commit real configuration)
+*.env
+.env.*
+!*.env.example
+node_modules/
+gpu-server/weights/
